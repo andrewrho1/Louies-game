@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Louie's Whack-a-Mole</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>Louie's Whack-a-Mole</h1>
+      <div id="score-container">
+        Score: <span id="score">0</span>
+      </div>
+    </header>
+    <main id="game-area">
+      <button class="hole" id="hole1"><span class="key-label">Q</span></button>
+      <button class="hole" id="hole2"><span class="key-label">W</span></button>
+      <button class="hole" id="hole3"><span class="key-label">E</span></button>
+      <button class="hole" id="hole4"><span class="key-label">A</span></button>
+      <button class="hole" id="hole5"><span class="key-label">S</span></button>
+      <button class="hole" id="hole6"><span class="key-label">D</span></button>
+    </main>
+    <div id="control-panel">
+      <button id="start-stop-button">Start Playing (space)</button>
+      <button id="resume-button" style="display:none;">Resume Game (space)</button>
+      <button id="end-button" style="display:none;">End Game (esc)</button>
+
+      <div id="end-message">
+        Game Over! Final Score: <span id="final-score"></span>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
